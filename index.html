@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MAALE — Indumentaria urbana hecha a mano</title>
+<meta name="description" content="Indumentaria urbana de producción propia. Piezas de taller, stock limitado." />
+<link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body class="textura">
+
+<div class="franja-superior">Envíos a CABA y a todo el país · Tienda online las 24hs</div>
+
+<header class="nav">
+  <div class="container">
+    <a href="/index.html" class="marca">
+      <img src="/img/logo-maale.png" alt="MAALE — Productos Personalizados" class="marca-logo" />
+      MAALE
+    </a>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="/index.html#catalogo">Catálogo</a>
+      <a href="/index.html#destacados">Destacados</a>
+      <a href="/index.html#nosotros">Nosotros</a>
+      <a href="/js/carrito.js">Carrito</a>
+    </nav>
+
+    <div class="nav-acciones">
+      <button class="icono-btn" id="abrir-carrito" aria-label="Abrir carrito">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span id="contador-carrito" class="mono">0</span>
+      </button>
+      <button class="menu-toggle" aria-label="Abrir menú">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-fondo">
+    <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M40 0 L0 0 0 40" fill="none" stroke="#3a3835" stroke-width="0.6"/>
+        </pattern>
+      </defs>
+      <rect width="800" height="600" fill="url(#grid)" />
+    </svg>
+  </div>
+  <div class="hero-contenido">
+    <div class="eyebrow">Producción propia · Edición limitada</div>
+    <h1 class="hero-titulo">PRODUCTOS<br><em>PERSONALIZADOS</em></h1>
+    <p class="hero-sub">Somos un emprendimiento de productos personalizados. Estampamos prendas de indumentaria y también accesorios con diseños propios o de terceros.</p>
+    <div class="hero-acciones">
+      <a href="#catalogo" class="btn btn-primario">Ver catálogo</a>
+      <a href="#nosotros" class="btn btn-secundario">Sobre nosotros</a>
+    </div>
+  </div>
+  <div class="hero-marquesina">
+    <div class="track">
+      <span>·</span>ENVÍOS A CABA EN EL DÍA<span>·</span>PAGO ELECTRÓNICO<span>·</span>STOCK LIMITADO<span>.</span>ENVÍOS A TODO EL PAÍS<span>·</span>PAGO CON MERCADO PAGO<span>·</span>STOCK LIMITADO<span>·</span>CAMBIOS SIN CARGO
+    </div>
+  </div>
+</section>
+
+<section class="banda-valores">
+  <div class="container">
+    <div class="valor-item">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+      <div><h3>Envío a todo el país</h3><p>Despachos desde el taller todas los días.</p></div>
+    </div>
+    <div class="valor-item">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+      <div><h3>Pagá con Mercado Pago</h3><p>Tarjeta, transferencia o dinero en cuenta.</p></div>
+    </div>
+    <div class="valor-item">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12a9 9 0 1 1-9-9c2.5 0 4.7 1 6.4 2.6"/><path d="M21 3v6h-6"/></svg>
+      <div><h3>Cambios sin cargo</h3><p>7 días para cambiar talle sin costo extra.</p></div>
+    </div>
+    <div class="valor-item">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      <div><h3>Bajadas cortas</h3><p>Producción limitada, piezas numeradas.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="seccion" id="destacados">
+  <div class="container">
+    <div class="seccion-header reveal">
+      <div>
+        <div class="eyebrow">Selección del taller</div>
+        <h2 class="seccion-titulo">Destacados</h2>
+      </div>
+    </div>
+    <div class="grilla-productos" id="grilla-destacados">
+      <div class="tarjeta-producto"><div class="tarjeta-img skeleton"></div></div>
+      <div class="tarjeta-producto"><div class="tarjeta-img skeleton"></div></div>
+      <div class="tarjeta-producto"><div class="tarjeta-img skeleton"></div></div>
+      <div class="tarjeta-producto"><div class="tarjeta-img skeleton"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="seccion" id="catalogo" style="padding-top:0;">
+  <div class="container">
+    <div class="seccion-header reveal">
+      <div>
+        <div class="eyebrow">Todo el catálogo</div>
+        <h2 class="seccion-titulo">Prendas</h2>
+      </div>
+    </div>
+    <div class="filtros" id="filtros">
+      <button class="filtro activo" data-cat="">Todo</button>
+      <button class="filtro" data-cat="camperas">Camperas</button>
+      <button class="filtro" data-cat="buzos">Buzos</button>
+      <button class="filtro" data-cat="remeras">Remeras</button>
+      <button class="filtro" data-cat="pantalones">Pantalones</button>
+      <button class="filtro" data-cat="accesorios">Accesorios</button>
+    </div>
+    <div class="grilla-productos" id="grilla-catalogo"></div>
+  </div>
+</section>
+
+<section class="seccion" id="nosotros" style="border-top:1px solid var(--acero);">
+  <div class="container" style="max-width:720px;">
+    <div class="eyebrow reveal">Sobre nosotros</div>
+    <h2 class="seccion-titulo reveal" style="margin-top:10px;">El taller</h2>
+    <p class="reveal" style="color:var(--hueso-op); margin-top:18px; font-size:1.05rem; line-height:1.8;">
+      Somos un emprendimiento de productos personalizados. Estampamos prendas de indumentaria y también accesorios con diseños propios o de terceros.
+    </p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <img src="logo-maale.png" alt="MAALE — Productos Personalizados" class="footer-logo" />
+        <p>Estampamos prendas de indumentaria y también accesorios con diseños propios o de terceros.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Tienda</h4>
+        <a href="/index.html#catalogo">Catálogo</a>
+        <a href="/index.html#destacados">Destacados</a>
+        <a href="carrito.html">Carrito</a>
+      </div>
+      <div class="footer-col">
+        <h4>Ayuda</h4>
+        <a href="#">Envíos</a>
+        <a href="#">Cambios y devoluciones</a>
+        <a href="#">Preguntas frecuentes</a>
+      </div>
+      <div class="footer-col">
+        <h4>Seguinos</h4>
+        <a href="#">Instagram</a>
+        <a href="#">WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 MAALE. Todos los derechos reservados.</span>
+      <span>Hecho a mano, pieza por pieza.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="panel-carrito" id="panel-carrito">
+  <div class="panel-carrito-header">
+    <h3>Tu carrito</h3>
+    <button class="cerrar-panel" id="cerrar-carrito" aria-label="Cerrar carrito">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="panel-carrito-items" id="panel-carrito-items"></div>
+  <div class="panel-carrito-footer" id="panel-carrito-footer" style="display:none;">
+    <div class="subtotal-fila"><span>Subtotal</span><span id="carrito-subtotal" class="mono">$0</span></div>
+    <a href="/js/carrito.js" class="btn btn-primario btn-full">Ir a pagar</a>
+  </div>
+</aside>
+
+<script type="module" src="/js/main.js"></script>
+<script type="module">
+  import { renderizarDestacados, renderizarCatalogo } from "/js/productos.js";
+  renderizarDestacados("grilla-destacados");
+  renderizarCatalogo("grilla-catalogo");
+
+  document.querySelectorAll(".filtro").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".filtro").forEach((b) => b.classList.remove("activo"));
+      btn.classList.add("activo");
+      renderizarCatalogo("grilla-catalogo", btn.dataset.cat || null);
+    });
+  });
+</script>
+</body>
+</html>
